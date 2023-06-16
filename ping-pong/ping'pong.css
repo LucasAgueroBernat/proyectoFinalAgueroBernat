@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+.seccion1{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: #333;
+}
+
+#score-container {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+#question-container {
+  margin-bottom: 20px;
+}
+
+#options {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#options li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 10px;
+  color: #333;
+}
+
+#final-result-container {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#restart-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lightsaber-container {
+  height: 20px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.lightsaber-bar {
+  height: 100%;
+}
+
+.lightsaber-light {
+  height: 100%;
+  background-color: #b2ebf2;
+}
+
+.lightsaber-dark {
+  height: 100%;
+  background-color: #ef9a9a;
+}
+
+#next-button, #theme-toggle {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#next-button {
+  margin-right: 10px;
+}

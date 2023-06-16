@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Cuánto sabes de Star Wars?</title>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="./ping'pong.css">
+</head>
+<body>
+    <header class="seccion1">
+        <a href="../index.html">Inicio de STAR-WARS</STAR-WARS></a>
+        <a href="../biblioteca/bibilioteca.html">BIBLIOTECA DE PERSONAJES</a>
+        <a href="../memoria/memoriastarwars.html">JUEGO DE LA MEMORIA</a>
+    </header>
+  <div class="container">
+    <h1>Star Wars Quiz</h1>
+    <div id="score-container">
+      <p>Preguntas correctas: <span id="correct-answers">0</span></p>
+    </div>
+    <div id="question-container">
+      <h2 id="question"></h2>
+      <ul id="options">
+        <li class="option" onclick="checkAnswer(0)"></li>
+        <li class="option" onclick="checkAnswer(1)"></li>
+        <li class="option" onclick="checkAnswer(2)"></li>
+      </ul>
+      <p id="result"></p>
+    </div>
+    <div id="final-result-container">
+      <h2 id="final-message"></h2>
+      <button id="restart-button">Reiniciar</button>
+    </div>
+    <div class="lightsaber-container">
+      <div class="lightsaber-bar">
+        <div id="ls-light" class="lightsaber-light"></div>
+        <div id="ls-dark" class="lightsaber-dark"></div>
+      </div>
+    </div>
+    <button id="next-button">Siguiente</button>
+    <button id="theme-toggle">Cambiar tema</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js.ping-pong.js"></script>
+</body>
+</html>
+
+
+    
+
