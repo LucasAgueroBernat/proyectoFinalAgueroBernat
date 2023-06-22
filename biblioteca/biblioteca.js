@@ -70,41 +70,37 @@ function activateDarkSide() {
 
   async function buscarPersonaje() {
 	const input = document.getElementById("personajeInput");
-	const personajeElegidoPorUsuario = input.value.toLowerCase();
+	const personajeElegidoPorUsuario = input.value//.toLowerCase();
   
 	try {
-	  const response = await fetch("./data.json");
-	  const data = await response.json();
-	  const resultado = data.find(item => item.nombre == personajeElegidoPorUsuario);
-
+		const response = await fetch("./data.json");
+		const data = await response.json();
+		const resultado = data.find(item => item.nombre == personajeElegidoPorUsuario);
   
-	  if (resultado) {
-		const contenedor = document.getElementById("resultados"); // ID del contenedor en el HTML
-  
-		data.forEach(item => {
+	
+		if (resultado) {
+		  const contenedor = document.getElementById("resultados"); // ID del contenedor en el HTML
 		  const li = document.createElement("li");
-		  li.innerHTML = `
-			<h2>${item.nombre}</h2>
-			<p>${item.planetaNatal}</p>
-			<p>${item.edad}</p>
-			<p>${item.hijos}</p>
-			<p>${item.padres}</p>
-			<p>${item.afiliacion}</p>
-			<p>${item.maestros}</p>
-			<p>${item.aprendices}</p>
-			<p>${item.muerte}</p>
-		  `;
-		  contenedor.appendChild(li); // Agregar el elemento li al contenedor
-		});
-  
-		console.log(resultado);
-	  } else {
-		console.log("dato no encontrado");
-	  }
+			li.innerHTML = `
+			  <h2>Nombre: ${resultado.nombre}</h2>
+			  <p>Planeta Natal: ${resultado.planetaNatal}</p>
+			  <p>Edad: ${resultado.edad}</p>
+			  <p>Hijos${resultado.hijos}</p>
+			  <p>Padres: ${resultado.padres}</p>
+			  <p>Afiliacion: ${resultado.afiliacion}</p>
+			  <p>Maestros: ${resultado.maestros}</p>
+			  <p>Aprendices: ${resultado.aprendices}</p>
+			  <p>Muerte: ${resultado.muerte}</p>
+			  <img src="${resultado.imagen}" />
+			`;
+			contenedor.appendChild(li); // Agregar el elemento li al contenedor
+		  }else{
+			console.log("dato no encontrado");
+		  }
 	} catch (error) {
-	  console.log("error al cargar los datos");
-	}
-  }
+		console.log("no se pudo obtener la informacion");
+	}}
+  
   document.addEventListener("DOMContentLoaded", function() {
 	const formulario = document.getElementById("formulario");
 	formulario.addEventListener("submit", async function(e) {
@@ -112,6 +108,3 @@ function activateDarkSide() {
 	  await buscarPersonaje();
 	});
   });
-  
-  
-  

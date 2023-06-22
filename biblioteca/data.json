@@ -14,7 +14,8 @@
             ],
             "maestros": ["Qui-Gon Jinn", "Obi-Wan Kenobi", "Darth Sidious", "Yoda"],
             "aprendices": ["Ahsoka Tano", "Inquisición"],
-            "muerte": "4 DBY Estrella de la Muerte"
+            "muerte": "4 DBY Estrella de la Muerte",
+            "imagen": "./imagenbiblioteca/anakin.jpg"
         },
         {
             "nombre": "Obi-Wan Kenobi",
@@ -24,7 +25,8 @@
             "afiliacion": ["Orden Jedi (Alto Consejo Jedi)", "República Galáctica (7mo Cuerpo Aéreo)", "Alianza para Restaurar la República"],
             "maestros": ["Qui-Gon Jinn", "Yoda"],
             "aprendices": ["Anakin Skywalker", "Luke Skywalker"],
-            "muerte": "0 ABY Estrella de la Muerte"
+            "muerte": "0 ABY Estrella de la Muerte",
+            "imagen": "./imagenbiblioteca/obi wan.jpg"
         },
         {
             "nombre": "Darth Sidious",
@@ -45,6 +47,7 @@
             ],
             "maestros": "Darth Plagueis",
             "aprendices": ["Wilhuff Tarkin", "Darth Maul", "Darth Tyranus", "Gallius Rax", "Darth Vader", "Inquisición", "Snoke", "Kylo Ren"],
-            "muerte": "35 DBY Exegol"
+            "muerte": "35 DBY Exegol",
+            "imagen": "./imagenbiblioteca/dath sidious.jpg"
         }
     ]
